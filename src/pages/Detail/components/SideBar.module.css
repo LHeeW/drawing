@@ -1,0 +1,77 @@
+.container {
+  position: absolute;
+  top: 35%;
+  right: 3rem;
+  transform: translateY(-50%);
+  background-color: #000000d9;
+  padding: 2rem 2.5rem;
+  border-radius: 1.6rem;
+  border: 0.1rem solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-width: 25rem;
+  max-width: 45rem;
+  z-index: 1000;
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 1rem 3rem #00000080;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.discipline_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.control_row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.discipline_name {
+  width: 7rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+.range_input {
+  flex: 1;
+  cursor: pointer;
+  height: 0.4rem;
+}
+
+.version_tag {
+  width: 8rem;
+  font-size: 0.8rem;
+  text-align: right;
+  color: #00ffcc;
+  font-weight: 500;
+}
+
+.changes_box {
+  background-color: #ffffff0d;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  border-left: 0.3rem solid #00ffcc;
+  border-right: 0.3rem solid #00ffcc;
+}
+
+.changes_list {
+  margin: 0;
+  padding-left: 1.8rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.container::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 0.2rem;
+}
